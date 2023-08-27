@@ -1,10 +1,10 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/styles.css">
-    <title>CozyCup Café | Home</title>
+    <title>CozyCup Café</title>
 </head>
 <body>
     <header>
@@ -13,8 +13,8 @@
                 <img src="img/logo.png" alt="CozyCup Café Logo">
             </div>
             <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#menu">Menu</a></li>
+                <li><a href="Index.html">Home</a></li>
+                <li><a href="menu.html">Menu</a></li>
                 <li><a href="about.html">About Us</a></li>
                 <li><a href="contact.html">Contact</a></li>
             </ul>
@@ -22,42 +22,86 @@
     </header>
 
     <section id="home" class="hero">
-        <h1>Welcome to CozyCup Café</h1>
-        <p>Sip, Relax, Repeat</p>
-        <a href="#menu" class="cta-button">Explore Menu</a>
+        <style>
+            body {
+                background-image: url('cafe.jpg');
+                background-repeat: no-repeat;
+            }
+        </style>
+        <p><font size="+2"><FONT COLOR="BLACK">Welcome to CozyCup Café</FONT></p>
+        <p><font size="+1"><FONT COLOR="BLACK">Sip, Relax, Repeat</FONT></p>
+        <a href="#coffee" class="cta-button">Explore Coffee Blends</a>
+        &nbsp
+        <a href="#pastry" class="cta-button">Explore Pastries</a>
     </section>
 
-    <section id="menu" class="menu">
-        <h2>Our Menu</h2>
-        <!-- Add menu items here -->
-    </section>
+    <section id="coffee" class="coffee">
+        <style>
+            .header-container {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+            }
 
-    <section id="about" class="about">
-        <h2>About Us</h2>
-        <p>Discover the story behind CozyCup Café...</p>
-    </section>
+            .header {
+                margin: 0;
+            }
 
-    <section id="contact" class="contact">
-        <h2>Contact Us</h2>
-        <p>Have questions or feedback? Reach out to us...</p>
-    </section>
+            .left {
+                text-align: left;
+            }
 
-    <footer>
-        <footer>
-            <div class="footer-links">
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="#">Menu</a></li>
-                    <li><a href="about.html">About Us</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                </ul>
-            </div>
-            <div class="social-media">
-                <a href="#"><img src="img/facebook.png" alt="Facebook"></a>
-                <a href="#"><img src="img/twitter.png" alt="Twitter"></a>
-                <a href="#"><img src="img/instagram.png" alt="Instagram"></a>
-            </div>
-        </footer>
-    </footer>
-</body>
-</html>
+            .center {
+                text-align: center;
+            }
+
+            .right {
+                text-align: right;
+            }
+        </style>
+        <center><font size="+2"><a href="menu.html" class="cta-button">Coffee Blends</a></font></center>
+        &nbsp
+        <div class="header-container">
+            <h1 class="header left"><FONT color="BLACK">Hot Brewed Coffee</FONT></h1>
+            <h1 class="header center"><FONT color="BLACK">Iced Cappuccino</FONT></h1>
+            <h1 class="header right"><FONT color="BLACK">Coffee Frappuccino</FONT></h1>
+        </div>
+        <div class="header-container">
+            <h1 class="header left">
+                <img src="hotbrewedcoffee.jpg" alt="Hot Brewed Coffee" width="350" height="350
+">
+            </h1>
+            <h1 class="header center">
+                <img src="IcedCappuccino.jpg" alt="Iced Cappucino" width="350" height="350
+">
+            </h1>
+            <h1 class="header right">
+                <img src="CoffeeFrappuccino.jpg" alt="Coffee Frappuccino" width="350" height="350
+">
+            </h1>
+        </div>
+    </section>
+    &nbsp
+    <section id="pastry" class="pastry">
+        <center><font size="+2"><a href="menu.html" class="cta-button">Pastries</a></font></center>
+        &nbsp
+        <div class="header-container">
+            <h1 class="header left"><FONT color="BLACK">Banana Bread</FONT></h1>
+            <h1 class="header center"><FONT color="BLACK">Corned Beef Pandesal</FONT></h1>
+            <h1 class="header right"><FONT color="BLACK">Bagel</FONT></h1>
+        </div>
+        <div class="header-container">
+            <h1 class="header left">
+                <img src="bananabread.jpeg" alt="Banana Bread" width="350" height="350
+">
+            </h1>
+            <h1 class="header center">
+                <img src="CornedBeefPandesal.jpg" alt="Corned Beef Pandesal" width="350" height="350
+">
+            </h1>
+            <h1 class="header right">
+                <img src="Bagel.jpg" alt="Just Bagel" width="350" height="350
+">
+            </h1>
+        </div>
+    </section>
